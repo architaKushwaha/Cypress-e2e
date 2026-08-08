@@ -1,0 +1,23 @@
+{
+  "name": "cypress-e2e",
+  "version": "1.0.0",
+  "description": "Test Automation",
+  "homepage": "https://github.com/architaKushwaha/Cypress-e2e#readme",
+  "bugs": {
+    "url": "https://github.com/architaKushwaha/Cypress-e2e/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/architaKushwaha/Cypress-e2e.git"
+  },
+  "license": "ISC",
+  "author": "Archita Kushwaha",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "cypress": "^15.20.0"
+  }
+}

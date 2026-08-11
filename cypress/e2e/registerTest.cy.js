@@ -14,7 +14,5 @@ describe('Register Test', ()=>{
         registerObj.enterPassword(registerData.password)
         registerObj.selectcheckbox()
         registerObj.clickContinueButton()
-
     })
-
 })

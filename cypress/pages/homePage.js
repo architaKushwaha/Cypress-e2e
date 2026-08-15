@@ -1,11 +1,11 @@
 class HomePage{
 
     webLocators = {
-        searchBox: '.form-control input-lg',
-        clickSearch: 'btn btn-default btn-lg',
-        Product: 'img[title="MacBook"]',
-        addToCart: '.fa.fa-shopping-cart',
-        sucessMessage: '.alert alert-success alert-dismissible',  
+        searchBox: 'input.form-control.input-lg',
+        clickSearch: 'button.btn.btn-default.btn-lg',
+        Product: '.product-thumb',
+        addToCart: 'button[onclick*="cart"]',
+        sucessMessage: '.alert.alert-success.alert-dismissible',
     }
 
     searchProduct(productName){
@@ -14,11 +14,14 @@ class HomePage{
     }
 
     clickProduct(){
-        cy.get(this.webLocators.Product).click()
+        cy.contains(this.webLocators.Product, 'MacBook').should('be.visible').click()
     }
 
     addToCart(){
-        cy.get(this.webLocators.addToCart).click()
+        cy.contains(this.webLocators.Product, 'MacBook')
+            .find(this.webLocators.addToCart)
+            .should('be.visible')
+            .click()
     }
     verifySuccessMessage(){
         return cy.get(this.webLocators.sucessMessage)

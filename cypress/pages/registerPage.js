@@ -12,7 +12,7 @@ class RegisterPage{
     }  
 
     openURL(){
-        cy.visit(Cypress.env('URL'))
+        cy.visit(Cypress.env('REGISTER_PATH'))
     }
     enterFirstName(firstName){
         cy.get(this.webLocators.firstName).type(firstName)

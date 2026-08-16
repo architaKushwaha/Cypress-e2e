@@ -13,6 +13,7 @@ module.exports = defineConfig({
     },
   },
   env: {
-    LOGIN_PATH: '/index.php?route=account/login'
+    LOGIN_PATH: '/index.php?route=account/login',
+    REGISTER_PATH: '/index.php?route=account/register'
   }
 });

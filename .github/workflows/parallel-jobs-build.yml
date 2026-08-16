@@ -1,4 +1,4 @@
-name: Sanity
+name: Parallel Tests
 on: push
 jobs:
   Add-to-Cart-run:
